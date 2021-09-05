@@ -1,12 +1,9 @@
 * {
   box-sizing: border-box;
-  /* margin: 0; */
-  /* padding: 0; */
 }
 
 body {
   margin: 0;
-  /* min-width: 992px; */
   font-family: "Helvetica";
 }
 
@@ -41,31 +38,34 @@ a {
   font-weight: bold;
 }
 
-
 .header-image img {
   width: 100%;
 }
 
 .products {
   text-align: center;
+  margin: 60px 0 120px 0;
 }
 
 .products h2 {
   font-family: "Helvetica";
   font-size: 24px;
   color: #545454;
-  font-weight: bold;
-  margin: 60px auto -20px auto;
+  font-weight: bold; 
+  margin: 60px auto 60px auto;
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 clamp(15px,100px,20%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, max-content));
+  row-gap: 80px;
+  column-gap: 20px;
   justify-content: center;
 }
 
 .card {
-  margin: 80px 20px;
+  width: 225px;
   font-family: "Helvetica";
   font-size: 16px;
 }
@@ -86,4 +86,17 @@ a {
 .card .card-description {
   margin-top: 20px;
   margin-bottom: 4px;
+}
+
+.footer {
+  text-align: center;
+  margin: 120px auto 80px;
+}
+
+.sns-logo {
+  margin: 0 10px;
+}
+
+.sns-logo img {
+  height: 20px;
 }
