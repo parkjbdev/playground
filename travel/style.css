@@ -1,0 +1,33 @@
+.logo {
+  margin: 80px auto;
+  text-align: center;
+}
+
+.logo > img {
+  width: 165px;
+  height: 58px;
+}
+
+.menu {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.menu-item {
+  font: bold 16px 'Helvetica', sans-serif;
+  color: #58595B;
+  text-decoration: none;
+  margin: auto 20px;
+}
+
+.menu-item.current {
+  color: black;
+}
+
+.img {
+  text-align: center;
+}
+
+.img > img {
+  width: 90%;
+}
